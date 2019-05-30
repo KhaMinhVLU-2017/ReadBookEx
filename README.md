@@ -9,10 +9,10 @@ _I'm usually read ebook on any website. So problem was my eyes work a lot on scr
 
 
 # After we are choose one option the background you want #
-_ end.... tada......_
+_end.... tada......
 
 <img src="https://user-images.githubusercontent.com/31025072/58609625-70e04600-82d2-11e9-88a4-4afe4a246eca.png" width="500px" />
 
 
 
-_ Have a nice day...1
+_Have a nice day...!
