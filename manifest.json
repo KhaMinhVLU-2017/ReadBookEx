@@ -1,10 +1,13 @@
   {
-    "name": "Background",
+    "name": "DarkEbook",
     "version": "1.0",
     "description": "Extension for your don't eye pain!",
     "background": {
       "scripts": ["background.js"],
       "persistent": false
+    },
+    "chrome_url_overrides" : {
+      "newtab": "newtab.html"
     },
     "content_scripts": [
     	{
@@ -50,5 +53,6 @@
             }
           }
         },
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'"
   }
