@@ -13,6 +13,14 @@ _end.... tada......_
 
 <img src="https://user-images.githubusercontent.com/31025072/58609625-70e04600-82d2-11e9-88a4-4afe4a246eca.png" width="500px" />
 
+# The Newtab your browser after add extension  #
+_ You can input yourname and It's on screen whenever you new tab
+<img src="https://user-images.githubusercontent.com/31025072/59993903-24431d00-967c-11e9-9201-24897234bc49.png" width="500px" />
 
+# That's result when you input yourname #
+
+<img src="https://user-images.githubusercontent.com/31025072/59994002-80a63c80-967c-11e9-8910-a16af396bf7b.png" width="500px" />
+
+_ I'm happy when my extension give bit benefit to you _
 
 _Have a nice day...!_
