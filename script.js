@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.user-name').css('display','none');
     $('.greeting').html(`Hello <span class="stored-name">${username}</span>.`);
   }else{
-    $('.greeting').css('display','none');
+    $('.greeting').css('display','block');
     $('.user-name').css('display','inline-block');
     $('.greeting').html(`What's your name?`);
   }
@@ -22,12 +22,9 @@ $(document).ready(function(){
     if(e.which == 13) {
       var username = e.target.value;
       if(!username) return;
-      $('.user-name').fadeOut(function(){
-        $('.greeting').html(`Hello ${username}.`);
-        $('.greeting').fadeIn(function(){
-          setCookie('username', username,365);
-        });
-      });
+      $('.user-name').css('display','none');
+      $('.greeting').html(`Hello <span class="stored-name">${username}</span>.`);
+      setCookie('username', username,365);
     }
   });
 
@@ -35,7 +32,8 @@ $(document).ready(function(){
 
 function setCurrentTime(){
   var now = new Date();
-  $('.time').html(now.getHours()+":"+now.getMinutes())
+  let minus = now.getMinutes() < 10 ? '0'+now.getMinutes() :  now.getMinutes();
+  $('.time').html(now.getHours()+":"+ minus)
   $('.date').html(now.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }));
 }
 function setCookie(cname,cvalue,exdays) {
@@ -58,3 +56,20 @@ function getCookie(cname) {
         }
     }
     return "";
+  }
+
+  $('.newName').click(function() {
+    $('.greeting').css('display','block');
+    $('.user-name').css('display','inline-block');
+    $('.greeting').html(`What's your name?`);
+
+    $('.user-name').keypress(function(e) {
+    if(e.which == 13) {
+      var username = e.target.value;
+      if(!username) return;
+      $('.user-name').css('display','none');
+      $('.greeting').html(`Hello <span class="stored-name">${username}</span>.`);
+      setCookie('username', username,365);
+    }
+  });
+})

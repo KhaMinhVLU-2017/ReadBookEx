@@ -86,3 +86,12 @@ body{
     font-size: 5vh;
     font-family: cursive;
 }
+.btnA {
+	position: absolute;
+    bottom: 50px;
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
